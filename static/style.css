@@ -1,0 +1,44 @@
+
+h1 {
+    /* center the title horizontally */
+    text-align: center;
+
+    /* using google fonts to get Roboto */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* set the background image to the flag jpg in the static folder NOT WORKING */
+    background-image: url("/static/flag.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  /* when user clicks the box, it is highlighted */
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
